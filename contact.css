@@ -1,0 +1,289 @@
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.06);
+    z-index: 999;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#contact{
+    background-image: url("../banner.jpg");
+    height: 20vh;
+    background-size: cover;
+    width: 100%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.map-container-9{
+  overflow:hidden;
+  padding: bottom 60px;
+  position:relative;
+  height:0;
+}
+.map-container-9 iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 30%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    position: relative;
+    left: 70%;
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #046daa;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 30% ;
+    position: relative;
+    left: 70%;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #ffffff;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  footer {
+    display: flex;
+    padding: 0%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #1a1a1a;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+footer h3 {
+    margin-bottom: 25px;
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+footer h4 {
+    color: #ffffff;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+footer h5 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+footer a {
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+footer .icon {
+    color: #ffffff;
+    padding-right: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+footer .row img {
+    border: 1px solid #bcbcbc;
+    border-radius: 6px;
+}
+
+footer .icon:hover,
+footer a:hover {
+    color: #0792bd;
+}
+
+#copyright {
+    width: 100%;
+    height: 1cm;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    background-color: #1a1a1a;
+    margin-top: 0%;
+    position: relative;
+    text-align: center;
+}
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+.container{
+    background: linear-gradient(#ffffff);
+    padding: 15px 9%;
+    padding-bottom: 50px;
+}
+
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    grid: 10px;
+}
+
+.container .box-container .box{ 
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+        border-radius: 5px;
+        background: #fff;
+        text-align: center;
+        padding: 20px;
+        justify-content: space-between;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+}
+
+.container .box-container .box img{
+    height: 50px;
+}
+
+.container .box-container .box h7{
+    color: #1a1a1a;
+    font-size: 16px;
+    padding: 20px 0;
+}
+
+.container .box-container .box p{
+    color: #1a1a1a;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.info-container{
+    background: linear-gradient(#ffffff);
+    padding: 15px 9%;
+    padding-bottom: 50px;
+}
+
+.info-container .info-box-container{
+    display: inline-block;
+    width: calc(50% / 1);
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    grid: 10px;
+}
+
+.info-container .info-box-container .boxs{ 
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+        border-radius: 5px;
+        background: #fff;
+        text-align: center;
+        padding: 20px;
+        justify-content: space-between;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+}
+
+.info-container .info-box-container .boxs img{
+    height: 50px;
+}
+
+.info-container .info-box-container .boxs h7{
+    color: #1a1a1a;
+    font-size: 16px;
+    padding: 20px 0;
+}
+
+.info-container .info-box-container .boxs p{
+    color: #1a1a1a;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.contact-container{
+    max-width: 960px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1);
+    height: 40%;
+}
